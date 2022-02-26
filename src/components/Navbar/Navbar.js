@@ -1,13 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div className="d-flex justify-content-start container ">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenu2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li>
+            <button class="dropdown-item" type="button">
+              Action
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button">
+              Another action
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button">
+              Something else here
+            </button>
+          </li>
+        </ul>
+        <h3>fff</h3>
+      </div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark container">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <small>Developer</small>
-          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -19,69 +46,75 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item dropdown">
-                <a
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
+            <Link to="/home" className="navbar-brand">
+              <small>Developer</small>
+            </Link>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li className="nav-item dropdown ">
+                <Link
+                  to="home/thanksBP"
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Free, Pro, & Team
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Free, Pro, & Team
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Cloud
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Server 3.4
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Server 3.3
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Server 3.2
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Server 3.1
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Enterprise Server 3.0
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       GitHub AE
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       <small>All Enterprise Server release </small>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       <small>About versions </small>
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
@@ -89,44 +122,46 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
+                  to="home/thanksBP"
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   English
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       简体中文 (Simplified Chinese)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       日本 (Japanese)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Española (Spanish)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="home/thanksBP" className="dropdown-item">
                       Portuguese do brasil (Portuguese)
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                 </ul>
               </li>
-              <li className="btn btn-outline-success" type="submit">
-                Sign Up
+              <li className="btn btn-outline-info" type="submit">
+                <Link to="/home/thanksBP" style={{ textDecoration: "none" }}>
+                  Sign Up
+                </Link>
               </li>
             </ul>
             <form className="d-flex">
@@ -140,7 +175,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
