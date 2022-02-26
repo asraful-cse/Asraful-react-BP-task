@@ -4,11 +4,19 @@ import { Link } from "react-router-dom";
 const WebHooks = () => {
   return (
     <div className="container">
-      <h2>Webhooks and events</h2>
-      <h3>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2 style={{ color: "white" }}>Webhooks and events</h2>
+      <h3 style={{ color: "white" }}>
         You can set up, test, and secure webhooks so your integrations can
         subscribe and react to events on GitHub.
       </h3>
+      <br />
+      <br />
+      <br />
+      <br />
       <Link to="/home/thanksBP">Webhooks</Link>
       <br />
       <br />

@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: center;
 	display: flex;
-    border: 1px solid lightgray;
+    border: 1px solid gray;
 }
 .icon:hover {
 	background-color: rgb(250, 25, 25);
@@ -27,9 +27,18 @@
 	background-color: #0D1117;
 	color: rgba(218, 242, 209, 0.755);
 	margin-top: 80px;
-	border-top: 1px solid lightgray;
+	border-top: 1px solid gray;
 }
 .link_style{
 	padding: 10px;
 	margin: 20px;
+}
+.navbar{
+align-items: center;
+}
+.nav-link {
+	font-size: 13px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }

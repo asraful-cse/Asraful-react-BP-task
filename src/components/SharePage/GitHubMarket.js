@@ -4,10 +4,18 @@ import { Link } from "react-router-dom";
 const GitHubMarket = () => {
   return (
     <div className="container">
-      <h2>GitHub Marketplace</h2>
-      <h3>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2 style={{ color: "white" }}>GitHub Marketplace</h2>
+      <h3 style={{ color: "white" }}>
         List your tools in GitHub Marketplace for developers to use or purchase.
       </h3>
+      <br />
+      <br />
+      <br />
+      <br />
       <Link to="/home/thanksBP">GitHub Marketplace Overview</Link>
       <br />
       <br />

@@ -4,12 +4,18 @@ import { Link } from "react-router-dom";
 const AppsContent = () => {
   return (
     <div className="container">
-      <h2>Apps</h2>
-      <h3>
+      <br />
+      <br /><br />
+      <br />
+      <h2 style={{color:'white'}}>Apps</h2>
+      <h3 style={{color:'white'}}>
         You can automate and streamline your workflow by building your own apps.
         <br />
         Getting started with apps
       </h3>
+      <br />
+      <br /><br />
+      <br />
       <Link to="/home/thanksBP">About apps</Link>
       <br />
       <br />

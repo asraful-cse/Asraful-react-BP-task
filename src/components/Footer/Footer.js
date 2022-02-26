@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
   faThumbsDown,
-  faGithub,
-  faCodePullRequest
+  faCode,
+  faCodePullRequest,
 } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
       <div>
         <div className="mt-4">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-5">
               <div className="left-container text-start">
                 <h5>Did this doc help you?</h5>
                 <div className="icons-container d-flex text-center ">
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 text-center">
+            <div className="col-md-5 ">
               <div className="footer-menu-container">
                 <h6>Help us make these docs great!</h6>
                 <p>
@@ -37,11 +37,12 @@ const Footer = () => {
               </div>
               <button className="btn btn-outline-info">
                 <Link to="/home" style={{ textDecoration: "none" }}>
-                  <FontAwesomeIcon icon={faCodePullRequest} /> <small>Make a Contribution</small> 
+                  <FontAwesomeIcon icon={faCodePullRequest} />{" "}
+                  <small>Make a Contribution</small>
                 </Link>
               </button>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-2">
               <div className="right-footer-container">
                 <h3 className="text-light">Still need help?</h3>
                 <Link to="/home/appsContent">
@@ -55,45 +56,56 @@ const Footer = () => {
             </div>
           </div>
 
-          <nav class="navbar navbar-expand-lg navbar-info ">
-            <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-info text-center align-items-center justify-content-center mt-4 ">
+            <div class="container-fluid m-5">
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item " style={{ color: "gray" }}>
-                    <small>© 2022 GitHub, Inc. </small>
+                <ul class="navbar-nav mx-2">
+                  <li class="nav-item mx-2" >
+                    <a class="nav-link ">
+                      <small style={{ color: "gray" }}>© 2022 GitHub, Inc. </small>
+                    </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link" href="#">
                       Teams
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link" href="#">
                       Privacy
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link ">Security</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2" >
                     <a class="nav-link ">Status</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-2">
                     <a class="nav-link ">Help</a>
                   </li>
-                  <li class="nav-item">
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faThumbsUp} />
-                  </div>
+                  <li class="nav-item mx-2">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCode} />
+                    </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link "></a>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">Contact GitHub</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link "></a>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">Pricing</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link "></a>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">Developer API</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">Trainig</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">Blog</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link ">About</a>
                   </li>
                 </ul>
               </div>

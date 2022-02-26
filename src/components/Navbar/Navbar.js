@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import './Navbar.css'
 const Navbar = () => {
   return (
-    <div className="d-flex justify-content-start container ">
-      <div class="dropdown">
+    <div className="d-flex justify-content-start container nav_style ">
+      {/* <div class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -32,8 +32,8 @@ const Navbar = () => {
           </li>
         </ul>
         <h3>fff</h3>
-      </div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark container">
+      </div> */}
+      <nav className="navbar navbar-expand-lg navbar-dark  container">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
