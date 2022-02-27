@@ -8,14 +8,111 @@ const Navbar = () => {
     <>
       <div class="sidebar">
         <Link to="/home">
-          <h2>
+          <h3>
             <FontAwesomeIcon icon={faAtom} /> GitHub Doc
-          </h2>
+          </h3>
         </Link>
 
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <small>Overview</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">About GitHub's APIs</Link>
+
+            <Link to="/home/thanksBP">Managing deploy keys</Link>
+ 
+            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
+        
+            <Link to="/home/thanksBP">Secret scanning partner program</Link>
+ 
+            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
+       
+            <Link to="/home/thanksBP">GitHub Developer Program</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>WEBHOOKS AND EVENTS</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">About GitHub's APIs</Link>
+
+            <Link to="/home/thanksBP">Managing deploy keys</Link>
+ 
+            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
+        
+            <Link to="/home/thanksBP">Secret scanning partner program</Link>
+ 
+            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
+       
+            <Link to="/home/thanksBP">GitHub Developer Program</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>Apps</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">About GitHub's APIs</Link>
+
+            <Link to="/home/thanksBP">Managing deploy keys</Link>
+ 
+            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
+        
+            <Link to="/home/thanksBP">Secret scanning partner program</Link>
+ 
+            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
+       
+            <Link to="/home/thanksBP">GitHub Developer Program</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>GITHUB MARKETPLACE</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">About GitHub's APIs</Link>
+
+            <Link to="/home/thanksBP">Managing deploy keys</Link>
+ 
+            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
+        
+            <Link to="/home/thanksBP">Secret scanning partner program</Link>
+ 
+            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
+       
+            <Link to="/home/thanksBP">GitHub Developer Program</Link>
+          </ul>
+        </div>
       </div>
 
       <div class="content">
