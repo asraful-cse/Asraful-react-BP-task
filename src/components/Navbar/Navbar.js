@@ -1,3 +1,5 @@
+import { faAtom } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -5,9 +7,12 @@ const Navbar = () => {
   return (
     <>
       <div class="sidebar">
-        <a class="active" href="#home">
-          Home
-        </a>
+        <Link to="/home">
+          <h2>
+            <FontAwesomeIcon icon={faAtom} /> GitHub Doc
+          </h2>
+        </Link>
+
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
@@ -32,8 +37,15 @@ const Navbar = () => {
                 className="collapse navbar-collapse "
                 id="navbarSupportedContent"
               >
-                <Link to="/home" className="navbar-brand">
-                  <small>Developer</small>
+                <Link
+                  to="/home"
+                  role="button"
+                  style={{ fontSize: "15px" }}
+                  className="navbar-brand"
+                >
+                  <a style={{ textDecoration: "none" }} href="">
+                    Developer
+                  </a>
                 </Link>
                 <ul className="mx-5 navbar-nav me-auto mb-2 mb-lg-0 ">
                   <li className="nav-item dropdown ">
@@ -154,16 +166,15 @@ const Navbar = () => {
                       Sign Up
                     </Link>
                   </li>
-        
                 </ul>
                 <form className="d-flex">
-                    <input
-                      className="form-control me-2"
-                      type="search"
-                      placeholder="Search Topics, Products.."
-                      aria-label="Search"
-                    />
-                  </form>
+                  <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search Topics, Products.."
+                    aria-label="Search"
+                  />
+                </form>
               </div>
             </div>
           </nav>

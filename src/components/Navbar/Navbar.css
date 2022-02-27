@@ -23,19 +23,19 @@ body {
   
   .sidebar a {
     display: block;
-    color: black;
+    color: rgb(241, 226, 226);
     padding: 16px;
     text-decoration: none;
   }
    
   .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #021313;
+    color: rgb(205, 223, 223);
   }
   
   .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: rgb(25, 224, 238);
+    color: rgb(119, 128, 128);
   }
   
   div.content {
