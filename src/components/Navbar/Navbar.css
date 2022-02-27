@@ -1,6 +1,7 @@
 .nav_style{
-    border-bottom: 1px solid rgb(49, 73, 71);
-    background-color: #050a13;
+    border-bottom: 1px solid gray;
+    background-color: #0D1117;
+    border-left: 1px solid gray;
 }
 
 
@@ -28,7 +29,7 @@ body {
   }
    
   .sidebar a.active {
-    background-color: #385050;
+    background-color: #0D1117;
     color: rgb(92, 143, 143);
   }
   
@@ -39,8 +40,6 @@ body {
   
   div.content {
     margin-left: 280px;
-    /* padding: 1px 6px; */
-    
   }
   
   @media screen and (max-width: 700px) {

@@ -6,117 +6,8 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <>
-      <div class="sidebar">
-        <Link to="/home">
-          <h3>
-            <FontAwesomeIcon icon={faAtom} /> GitHub Doc
-          </h3>
-        </Link>
-
-        <div class="nav-item dropdown">
-          <Link
-            class="nav-link dropdown-toggle"
-            id="navbarScrollingDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <small>Overview</small>
-          </Link>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-         
-            <Link to="/home/thanksBP">About GitHub's APIs</Link>
-
-            <Link to="/home/thanksBP">Managing deploy keys</Link>
- 
-            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
-        
-            <Link to="/home/thanksBP">Secret scanning partner program</Link>
- 
-            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
-       
-            <Link to="/home/thanksBP">GitHub Developer Program</Link>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <Link
-            class="nav-link dropdown-toggle"
-            id="navbarScrollingDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-           <small>WEBHOOKS AND EVENTS</small>
-          </Link>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-         
-            <Link to="/home/thanksBP">About GitHub's APIs</Link>
-
-            <Link to="/home/thanksBP">Managing deploy keys</Link>
- 
-            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
-        
-            <Link to="/home/thanksBP">Secret scanning partner program</Link>
- 
-            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
-       
-            <Link to="/home/thanksBP">GitHub Developer Program</Link>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <Link
-            class="nav-link dropdown-toggle"
-            id="navbarScrollingDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-           <small>Apps</small>
-          </Link>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-         
-            <Link to="/home/thanksBP">About GitHub's APIs</Link>
-
-            <Link to="/home/thanksBP">Managing deploy keys</Link>
- 
-            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
-        
-            <Link to="/home/thanksBP">Secret scanning partner program</Link>
- 
-            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
-       
-            <Link to="/home/thanksBP">GitHub Developer Program</Link>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <Link
-            class="nav-link dropdown-toggle"
-            id="navbarScrollingDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-           <small>GITHUB MARKETPLACE</small>
-          </Link>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-         
-            <Link to="/home/thanksBP">About GitHub's APIs</Link>
-
-            <Link to="/home/thanksBP">Managing deploy keys</Link>
- 
-            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
-        
-            <Link to="/home/thanksBP">Secret scanning partner program</Link>
- 
-            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
-       
-            <Link to="/home/thanksBP">GitHub Developer Program</Link>
-          </ul>
-        </div>
-      </div>
-
-      <div class="content">
-        <div className="d-flex justify-content-end  ">
+      <div class="content" >
+        <div className="d-flex  justify-content-end" style={{backgroundColor:'yellow'}}>
           <nav className="navbar navbar-expand-lg navbar-dark nav_style container">
             <div className="container-fluid">
               <button
@@ -275,6 +166,102 @@ const Navbar = () => {
               </div>
             </div>
           </nav>
+        </div>
+      </div>
+      <div class="sidebar">
+        <Link to="/home">
+          <h3 className="mx-4">
+            <FontAwesomeIcon icon={faAtom} /> GitHub Doc
+          </h3>
+        </Link>
+
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <small>Overview</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">About GitHub's APIs</Link>
+
+            <Link to="/home/thanksBP">Managing deploy keys</Link>
+ 
+            <Link to="/home/thanksBP">Using SSH agent forwarding</Link>
+        
+            <Link to="/home/thanksBP">Secret scanning partner program</Link>
+ 
+            <Link to="/home/thanksBP">Replacing GitHub Services</Link>
+       
+            <Link to="/home/thanksBP">GitHub Developer Program</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>WEBHOOKS AND EVENTS</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">Webhooks</Link>
+
+            <Link to="/home/thanksBP">Events</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>Apps</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">Getting started with app</Link>
+
+            <Link to="/home/thanksBP">Build GitHub Apps</Link>
+ 
+            <Link to="/home/thanksBP">Managing GitHub Apps</Link>
+        
+            <Link to="/home/thanksBP">Managing OAuth Apps</Link>
+ 
+            <Link to="/home/thanksBP">Guides</Link>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <Link
+            class="nav-link dropdown-toggle"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+           <small>GITHUB MARKETPLACE</small>
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+         
+            <Link to="/home/thanksBP">Overview</Link>
+
+            <Link to="/home/thanksBP">Create Marketplace Apps</Link>
+ 
+            <Link to="/home/thanksBP">Marketplace API usage</Link>
+        
+            <Link to="/home/thanksBP">List an app on Marketplace</Link>
+ 
+            <Link to="/home/thanksBP">Sell apps on the Marketplace</Link>
+          </ul>
         </div>
       </div>
     </>
