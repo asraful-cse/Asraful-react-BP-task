@@ -1,20 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../Navbar/Navbar.css";
 const AppsContent = () => {
   return (
-    <div className="container">
-      <br />
-      <br /><br />
-      <br />
-      <h2 style={{color:'white'}}>Apps</h2>
-      <h3 style={{color:'white'}}>
+    <div className=" content p-5">
+      <br /> 
+      <h2 style={{ color: "white" }}>Apps</h2>
+      <h3 style={{ color: "gray" }}>
         You can automate and streamline your workflow by building your own apps.
         <br />
         Getting started with apps
       </h3>
       <br />
-      <br /><br />
       <br />
       <Link to="/home/thanksBP">About apps</Link>
       <br />

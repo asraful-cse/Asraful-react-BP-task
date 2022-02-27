@@ -1,11 +1,23 @@
 .card_style {
-    margin-right: 0 ;
-    border-bottom: 1px solid green !important;
+  margin-top: 0 auto;
+  border-bottom: 1px solid gray !important;
+  color: gray;
+  max-width: 100%;
+  font-size: 14px;
+}
+.content_style {
+  color: gray;
 }
 
 .card_style2 {
-    text-decoration: none;
-    color: aliceblue;
-    
+  text-decoration: none;
+  color: aliceblue;
 }
-
+.card_style2 h6 {
+  color: #58a6ff;
+}
+.card_style:hover {
+  color: #58a6ff;
+  background-color: #7b818875;
+  border-radius: 2%;
+}

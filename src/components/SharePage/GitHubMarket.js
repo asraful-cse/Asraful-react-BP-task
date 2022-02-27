@@ -1,19 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../Navbar/Navbar.css";
 const GitHubMarket = () => {
   return (
-    <div className="container">
-      <br />
-      <br />
-      <br />
+    <div className=" content p-5">
       <br />
       <h2 style={{ color: "white" }}>GitHub Marketplace</h2>
-      <h3 style={{ color: "white" }}>
+      <h3 style={{ color: "gray" }}>
         List your tools in GitHub Marketplace for developers to use or purchase.
       </h3>
-      <br />
-      <br />
       <br />
       <br />
       <Link to="/home/thanksBP">GitHub Marketplace Overview</Link>
